@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    
+<header>
+        <h1>Number Conversion Machine</h1>
+        <a class="header_link" href="decimal.html">Decimal</a>  
+        <a class="header_link" href="binario.html">Binário</a>  
+        <a class="header_link" href="octal.html">Octal</a>  
+        <a class="header_link" href="hexa.html">Hexadecimal</a>
+</header>
+<br><br>
+
+        <h3>Converta números hexadecimais em octal, decimal e binário de forma fácil e rápida!</h3> <br>
+        <input class="input"  id="demo1" type="text" placeholder="Digite o valor hexadecimal">
+
+<br><br>
+
+        <h3>Converter para:</h3>
+
+<div class="container">
+
+        <input id="checkbox1"  type="checkbox"><b>Octal</b>
+<br>
+        <div class="aparecerResultado" id="demo2"></div>
+
+<br><br>
+
+        <input id="checkbox2"  type="checkbox"><b>Decimal</b>
+<br>
+        <div class="aparecerResultado" id="demo3"></div>
+        
+<br><br>
+
+        <input id="checkbox3"  type="checkbox"><b>Binário</b>
+<br>
+        <div class="aparecerResultado" id="demo4"></div>
+
+<br><br>
+
+<button class="button_converter" onclick="converter()">Converter</button> <br>
+<input class="button_resetar" onclick="resetar()" type="reset" value="Resetar">
+</div>
+
+<script src="js/hexa.js"></script>
+</body>
+</html>
