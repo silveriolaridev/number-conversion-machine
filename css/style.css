@@ -3,7 +3,7 @@
 
 
 body {
-    background-color: #ffffff;
+    background-color: #28282B;
     text-align: center;
     font-family: 'Roboto';
     font-weight: 400;
@@ -13,10 +13,12 @@ body {
 header {
     background-color: white ;
     padding: 15px;
-    background-color: #2980b9;
+    background-color: #6a0dad;
+    
+}
     
 
-}
+
 
 a {
     text-decoration: none;
@@ -30,6 +32,32 @@ h1 {
     margin-top: 10px;
     letter-spacing: 2px;
     font-size: 40px;
+    transform: scale(0);
+    animation: animacaoH1 2s ease-in-out forwards;
+    color: #f1c40f;
+    transition: color 0.3s ease-in-out;
+
+}
+
+h1:hover {
+    color: #d4ac0d; 
+}
+
+@keyframes animacaoH1 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 h3 {
@@ -41,10 +69,12 @@ h3 {
     font-size: 18px;
     cursor: pointer;
     margin-bottom: 5px;
+    color:  #f5f5f5;
+    opacity: 90%;
 }
 
 .header_link:hover{
-    background-color:#3498db;
+    background-color: #c084f5;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -60,34 +90,23 @@ h3 {
 
 }
 
-.button_converter {
+.button_converter, .button_resetar {
     padding: 15px;
     font-size: 15px;
     border-radius: 10px;
-    background-color: #3498db;
+    background-color: #6a0dad;
     font-weight: bold;
     cursor: pointer;
+    color: #f1c40f;
 
 }
 
-.button_converter:hover{
-    background-color: #2980b9;
-    transition: background-color 0.3s ease-in-out;
+.button_converter:hover, .button_resetar:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
 }
-
-.button_resetar {
-    padding: 15px;
-    font-size: 15px;
-    border-radius: 10px;
-    background-color: #3498db;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button_resetar:hover{
-    background-color: #2980b9;
-    transition: background-color 0.3s ease-in-out;
-}
+    
+    
 
 .input {
     padding: 15px;
@@ -99,5 +118,37 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    justify-content: center;
+    background-color: #f5f5f5; 
+    opacity: 90%;
+    min-height: 50vh;
+    padding: 50px;    
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20px;
+}
+
+.button_converter:active, 
+.button_resetar:active {
+    transform: scale(1.0); 
+}
+
+footer{
+    background-color: #6a0dad;
+    color: #ffffff; 
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
