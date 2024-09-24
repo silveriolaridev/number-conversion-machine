@@ -7,13 +7,24 @@ body {
     text-align: center;
     font-family: 'Roboto';
     font-weight: 400;
+    background-image: url(../img/fundo.png);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    height: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    
+      
 
 }
+
 
 header {
     background-color: white ;
     padding: 15px;
     background-color: #6a0dad;
+    
     
 }
     
@@ -34,29 +45,26 @@ h1 {
     font-size: 40px;
     transform: scale(0);
     animation: animacaoH1 2s ease-in-out forwards;
-    color: #f1c40f;
+    color: #ff69b4;
     transition: color 0.3s ease-in-out;
+    letter-spacing: 2px;
 
 }
 
 h1:hover {
     color: #d4ac0d; 
 }
-
 @keyframes animacaoH1 {
     0% {
         opacity: 0;
-        transform: scale(0);
-    }
-
-    50% {
-        opacity: 0.5;
-        transform: scale(1.2);
+        transform: translateX(-100px) rotate(-10deg) scale(0.8);
+        color: rgba(255, 255, 255, 0.5);
     }
 
     100% {
         opacity: 1;
-        transform: scale(1);
+        transform: translateX(0) rotate(0deg) scale(1);
+        color: #ff69b4
     }
 }
 
@@ -70,12 +78,13 @@ h3 {
     cursor: pointer;
     margin-bottom: 5px;
     color:  #f5f5f5;
-    opacity: 90%;
+
 }
 
 .header_link:hover{
-    background-color: #c084f5;
+    background-color: rgba(255, 255, 255, 0.5);
     transition: background-color 0.3s ease-in-out;
+    border-radius: 15px;
 }
 
 .aparecerResultado {
@@ -97,13 +106,14 @@ h3 {
     background-color: #6a0dad;
     font-weight: bold;
     cursor: pointer;
-    color: #f1c40f;
+    color: #fff;
 
 }
 
 .button_converter:hover, .button_resetar:hover{
     transform: scale(1.1); 
     transition: transform 0.3s ease-in-out;
+    background-color:  #5e00b3;
 }
     
     
@@ -119,17 +129,23 @@ h3 {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    background-color: #f5f5f5; 
+    background-color: rgba(255, 255, 255, 0.1);
     opacity: 90%;
-    min-height: 50vh;
-    padding: 50px;    
+    height: 710px;
+    padding: 20px;    
     border-radius: 10px;
-    width: 100%;
+    width: 500px;
     max-width: 500px;
     padding: 50px;
     margin: 0 auto;
+    color:  #f5f5f5;
+    border: 1px solid rgba(255, 255, 255, 0.3);;
+    backdrop-filter: blur(2px);
+    
+    
     
 }
+
 
 .card {
     display: flex;
@@ -151,4 +167,14 @@ footer{
     text-align: center;
     position: relative;
     margin-top: 40px;
+}
+
+.icon{
+ width: 20px;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon:hover{
+    transform: rotate(15deg);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
 }

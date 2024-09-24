@@ -41,7 +41,7 @@ function converter() {
     // Exibe os valores convertidos no console
     console.log (`Decimal: ${decimal}`);
     console.log (`Octal: ${octal}`);
-    console.log (`Hexadecimal: ${hexadecimal}`);
+    console.log (`Hexadecimal: ${hexadecimal.toUpperCase()}`);
     console.log (`Binário: ${binario}`);
     
     }

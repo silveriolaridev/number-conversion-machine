@@ -26,7 +26,7 @@ function converter() {
     
     if (checkHexa.checked) {
             demo3.style.display = 'block';
-            demo3.innerHTML = `${hexadecimal}`;
+            demo3.innerHTML = `${hexadecimal.toUpperCase()}`;
     } else {
             demo3.style.display = 'none';
     }
@@ -41,7 +41,7 @@ function converter() {
     // Exibe os valores convertidos no console
     console.log (`Decimal: ${decimal}`);
     console.log (`Octal: ${octal}`);
-    console.log (`Hexadecimal: ${hexadecimal}`);
+    console.log (`Hexadecimal: ${hexadecimal.toUpperCase()}`);
     console.log (`Binário: ${binario}`);
     }
     
