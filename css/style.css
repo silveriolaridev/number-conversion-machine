@@ -13,24 +13,16 @@ body {
     background-size: cover;
     height: 100%;
     background-position: center; 
-    background-repeat: no-repeat;
-    
-      
+    background-repeat: no-repeat;       
 
 }
 
 
 header {
-    background-color: white ;
     padding: 15px;
     background-color: #6a0dad;
-    
-    
 }
     
-
-
-
 a {
     text-decoration: none;
     color: #ffff;
@@ -90,15 +82,13 @@ h3 {
     background-color: #fff; 
     color: #333; 
     border-radius: 8px; 
-    padding: 10px; 
-    margin: 10px 0; 
+    padding: 5px; 
+    margin: 10px; 
     border: 2px solid rgba(255, 255, 255, 0.2); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     font-size: 18px; 
     text-align: center; 
     transition: all 0.3s ease; 
-   
-
 }
 
 .aparecerResultado:hover {
@@ -115,8 +105,6 @@ h3 {
     cursor: pointer;
     color: #fff;
     margin-top: 30px;
-   
-
 }
 
 .button_converter:hover, .button_resetar:hover{
@@ -124,9 +112,7 @@ h3 {
     transition: transform 0.3s ease-in-out;
     background-color:  #5e00b3;
 }
-    
-    
-
+     
 .input {
     padding: 15px;
     font-size: 15px;
@@ -139,8 +125,6 @@ h3 {
 }
 
 .container{
-    display: block;
-    flex-direction: column;
     align-items: center; 
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
@@ -155,8 +139,6 @@ h3 {
     color:  #f5f5f5;
     border: 1px solid rgba(255, 255, 255, 0.3);;
     backdrop-filter: blur(2px);
-    
-    
     
 }
 
@@ -184,7 +166,7 @@ footer{
 }
 
 .icon{
- width: 20px;
+ width: 23px;
  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -193,7 +175,6 @@ footer{
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
 }
 
-  
   .checkbox-group input[type="checkbox"]:hover {
     transform: scale(1.3); 
   }
