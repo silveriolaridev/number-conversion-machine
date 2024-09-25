@@ -89,15 +89,24 @@ h3 {
 
 .aparecerResultado {
     display: none; 
-    background-color: #f0f0f0; 
-    border-radius: 5px; 
-    padding: 15px; 
-    color: #333;
-    width: auto; 
-    height: auto; 
-    font-weight: 500;
+    background-color: #fff; 
+    color: #333; 
+    border-radius: 8px; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 18px; 
+    text-align: center; 
+    transition: all 0.3s ease; 
+   
 
 }
+
+.aparecerResultado:hover {
+    transform: scale(1.0); 
+    border-color: #6a0dad; 
+  }
 
 .button_converter, .button_resetar {
     padding: 15px;
@@ -107,6 +116,8 @@ h3 {
     font-weight: bold;
     cursor: pointer;
     color: #fff;
+    margin-top: 30px;
+   
 
 }
 
@@ -122,10 +133,15 @@ h3 {
     padding: 15px;
     font-size: 15px;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out; 
+}
+
+.input:hover{
+    border-color: #6a0dad; 
 }
 
 .container{
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
@@ -134,7 +150,7 @@ h3 {
     height: 710px;
     padding: 20px;    
     border-radius: 10px;
-    width: 500px;
+    width: 450px;
     max-width: 500px;
     padding: 50px;
     margin: 0 auto;
@@ -178,3 +194,12 @@ footer{
     transform: rotate(15deg);
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
 }
+
+  
+  .checkbox-group input[type="checkbox"]:hover {
+    transform: scale(1.3); 
+  }
+
+
+  
+ 
